@@ -55,7 +55,17 @@ const defaultMission: Mission = {
   status: 'active',
 };
 
-const MissionContext = createContext<MissionContextType>({} as MissionContextType);
+const MissionContext = createContext<MissionContextType>({
+  sensors: { energy: 87, communication: 94, stability: 76, temperature: -142, oxygen: 91, speed: 7.8 },
+  alerts: [],
+  mission: { name: 'FIAP-ALPHA-01', destination: 'Marte', launchDate: '2026-06-09', crew: '3', status: 'active' },
+  updateSensors: () => {},
+  addAlert: () => {},
+  markAlertRead: () => {},
+  clearAlerts: () => {},
+  updateMission: () => {},
+  unreadCount: 0,
+});
 
 export const MissionProvider = ({ children }: { children: React.ReactNode }) => {
   const [sensors, setSensors] = useState<SensorData>(defaultSensors);
