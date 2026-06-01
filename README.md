@@ -1,88 +1,207 @@
-```markdown
-# FIAP Space Control — Central de Monitoramento de Missões Espaciais
+# FIAP Space Control
 
-Aplicativo mobile desenvolvido em **React Native + Expo** que simula uma central de monitoramento de missões espaciais em tempo real.
+Central de Monitoramento de Missões Espaciais
 
----
+Aplicativo mobile desenvolvido em React Native + Expo que simula uma central de monitoramento espacial, permitindo acompanhar sensores, alertas críticos e informações da missão em tempo real.
 
-##  Sobre o Projeto
-
-O **FIAP Space Control** é um app cross-platform que funciona como painel de controle de uma missão espacial real. O usuário pode monitorar sensores da nave, receber alertas automáticos de parâmetros críticos, configurar dados da missão e acompanhar o status em tempo real.
-
-### Funcionalidades
-
-- **Dashboard** com dados de velocidade orbital, energia, comunicação, estabilidade e oxigênio
-- **Alertas automáticos** disparados quando parâmetros atingem níveis críticos
-- **Tela de sensores** com leitura detalhada e status de cada sistema
-- **Formulário de missão** com validação completa de campos
-- **Persistência local** de dados com AsyncStorage
-- **Gerenciamento de estado global** com Context API
-- **Navegação** entre telas com Expo Router
+![React Native](https://img.shields.io/badge/React%20Native-Mobile-blue)
+![Expo](https://img.shields.io/badge/Expo-SDK%2056-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
+![Status](https://img.shields.io/badge/Status-Concluído-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-##  Tecnologias Utilizadas
-
-- [React Native](https://reactnative.dev/)
-- [Expo SDK 56](https://expo.dev/)
-- [Expo Router](https://expo.github.io/router/)
-- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
-- [Context API](https://react.dev/reference/react/createContext)
-- [@expo/vector-icons](https://icons.expo.fyi/)
-- TypeScript
-
----
-
-##  Estrutura do Projeto
-
-```
-/app
-  ├── _layout.tsx        → Layout raiz com navegação por abas
-  ├── index.tsx          → Dashboard principal
-  ├── sensors.tsx        → Tela de sensores
-  ├── alerts.tsx         → Central de alertas
-  └── mission-form.tsx   → Formulário de configuração da missão
-/context
-  └── MissionContext.tsx → Estado global com Context API
-```
-
----
-
-## 🚀 Como Executar
-
-1. Clone o repositório
-```bash
-git clone https://github.com/PietroMauerGodoy/GS01-CROSS-PLATAFORM-APPLICATION-DEVELOPMENT.git
-```
-
-2. Instale as dependências
-```bash
-npm install
-```
-
-3. Inicie o projeto
-```bash
-npx expo start
-```
-
-4. Escaneie o QR Code com o app **Expo Go** no celular ou pressione **W** para abrir no navegador.
-
----
-
-##  Equipe de Desenvolvimento
+## Equipe de Desenvolvimento
 
 | Nome | RM |
-|------|----|
+|--------|--------|
 | Patrick Mansour | RM 562970 |
 | Pietro Mauer | RM 564345 |
 | Samir Assad | RM 561562 |
 
 ---
 
-##  Informações Acadêmicas
+## Visão Geral
 
-- **Curso:** Ciência da Computação
-- **Disciplina:** Cross-Platform Application Development
-- **Instituição:** FIAP
-- **Ano:** 2026
+O FIAP Space Control é uma aplicação mobile cross-platform desenvolvida para simular uma central de monitoramento de missões espaciais.
+
+O sistema fornece uma interface intuitiva para monitoramento dos principais indicadores da nave, permitindo acompanhar sensores em tempo real, visualizar alertas críticos e configurar parâmetros da missão.
+
+---
+
+## Objetivos do Projeto
+
+- Simular um ambiente de monitoramento espacial
+- Aplicar conceitos de desenvolvimento mobile cross-platform
+- Utilizar gerenciamento global de estado
+- Implementar persistência local de dados
+- Criar uma interface moderna utilizando React Native e Expo
+
+---
+
+## Funcionalidades
+
+### Dashboard
+
+Painel principal contendo:
+
+- Velocidade orbital
+- Nível de energia
+- Comunicação
+- Estabilidade da nave
+- Nível de oxigênio
+
+### Monitoramento de Sensores
+
+- Leitura detalhada dos sensores
+- Status dos sistemas da nave
+- Atualização dinâmica dos dados
+
+### Central de Alertas
+
+- Alertas automáticos
+- Identificação de parâmetros críticos
+- Exibição de ocorrências importantes
+
+### Configuração da Missão
+
+- Formulário de cadastro
+- Validação de campos
+- Configuração de parâmetros da missão
+
+### Persistência de Dados
+
+- Armazenamento local utilizando AsyncStorage
+- Recuperação automática dos dados salvos
+
+### Gerenciamento de Estado
+
+- Compartilhamento global de informações
+- Context API
+
+---
+
+## Tecnologias Utilizadas
+
+| Tecnologia | Finalidade |
+|------------|------------|
+| React Native | Desenvolvimento Mobile |
+| Expo SDK 56 | Ambiente de execução |
+| TypeScript | Tipagem estática |
+| Expo Router | Navegação entre telas |
+| Context API | Gerenciamento de estado |
+| AsyncStorage | Persistência local |
+| Expo Vector Icons | Componentes visuais |
+
+---
+
+## Estrutura do Projeto
+
+```text
+app/
+│
+├── _layout.tsx
+├── index.tsx
+├── sensors.tsx
+├── alerts.tsx
+└── mission-form.tsx
+│
+context/
+│
+└── MissionContext.tsx
 ```
+
+---
+
+## Organização dos Arquivos
+
+| Arquivo | Responsabilidade |
+|----------|----------------|
+| index.tsx | Dashboard principal |
+| sensors.tsx | Monitoramento dos sensores |
+| alerts.tsx | Central de alertas |
+| mission-form.tsx | Configuração da missão |
+| MissionContext.tsx | Gerenciamento global do estado |
+
+---
+
+## Requisitos
+
+Antes de executar o projeto, certifique-se de possuir instalado:
+
+- Node.js
+- npm
+- Expo CLI
+- Expo Go (Android ou iOS)
+
+---
+
+## Instalação
+
+### Clonar o repositório
+
+```bash
+git clone https://github.com/PietroMauerGodoy/GS01-CROSS-PLATAFORM-APPLICATION-DEVELOPMENT.git
+```
+
+### Acessar a pasta do projeto
+
+```bash
+cd GS01-CROSS-PLATAFORM-APPLICATION-DEVELOPMENT
+```
+
+### Instalar dependências
+
+```bash
+npm install
+```
+
+### Executar o projeto
+
+```bash
+npx expo start
+```
+
+---
+
+## Execução
+
+Após iniciar o projeto:
+
+- Escaneie o QR Code utilizando o aplicativo Expo Go.
+- Pressione W para executar no navegador.
+- Execute em um emulador Android.
+- Execute em um simulador iOS.
+
+---
+
+## Funcionalidades Implementadas
+
+| Recurso | Situação |
+|----------|----------|
+| Dashboard Espacial | Concluído |
+| Sistema de Alertas | Concluído |
+| Tela de Sensores | Concluído |
+| Formulário da Missão | Concluído |
+| Context API | Concluído |
+| AsyncStorage | Concluído |
+| Navegação com Expo Router | Concluído |
+| TypeScript | Concluído |
+
+---
+
+## Informações Acadêmicas
+
+| Campo | Informação |
+|---------|---------|
+| Instituição | FIAP |
+| Curso | Ciência da Computação |
+| Disciplina | Cross-Platform Application Development |
+| Ano | 2026 |
+
+---
+
+## Licença
+
+Este projeto foi desenvolvido para fins acadêmicos como parte das atividades da disciplina Cross-Platform Application Development da FIAP.
