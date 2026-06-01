@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "meu-app",
-    "slug": "meu-app",
+    "name": "GS01 - Cross Plataform Application Development",
+    "slug": "GS01 - cross-plataform-application-development",
     "scheme": "spacemission",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icons8-space-32.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true
@@ -20,7 +20,7 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icons8-space-32.png"
     },
     "plugins": [
       "expo-router",
