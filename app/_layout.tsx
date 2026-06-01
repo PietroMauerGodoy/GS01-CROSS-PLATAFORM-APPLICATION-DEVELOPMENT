@@ -1,7 +1,7 @@
 import { MissionProvider } from '../context/MissionContext';
 import { Tabs } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { Text } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function RootLayout() {
   return (
@@ -27,36 +27,32 @@ export default function RootLayout() {
         <Tabs.Screen
           name="index"
           options={{
-            title: 'MISSÃO',
             tabBarLabel: 'MISSÃO',
-            tabBarIcon: ({ color }) => <Text style={{ color, fontSize: 18 }}>🛸</Text>,
+            tabBarIcon: ({ color, size }) => <Ionicons name="rocket" size={size} color={color} />,
             headerTitle: '⬡  FIAP SPACE CONTROL',
           }}
         />
         <Tabs.Screen
           name="sensors"
           options={{
-            title: 'SENSORES',
             tabBarLabel: 'SENSORES',
-            tabBarIcon: ({ color }) => <Text style={{ color, fontSize: 18 }}>📡</Text>,
+            tabBarIcon: ({ color, size }) => <Ionicons name="pulse" size={size} color={color} />,
             headerTitle: '⬡  SENSORES',
           }}
         />
         <Tabs.Screen
           name="alerts"
           options={{
-            title: 'ALERTAS',
             tabBarLabel: 'ALERTAS',
-            tabBarIcon: ({ color }) => <Text style={{ color, fontSize: 18 }}>🚨</Text>,
+            tabBarIcon: ({ color, size }) => <Ionicons name="warning" size={size} color={color} />,
             headerTitle: '⬡  ALERTAS',
           }}
         />
         <Tabs.Screen
           name="mission-form"
           options={{
-            title: 'CONFIG',
             tabBarLabel: 'CONFIG',
-            tabBarIcon: ({ color }) => <Text style={{ color, fontSize: 18 }}>⚙️</Text>,
+            tabBarIcon: ({ color, size }) => <Ionicons name="settings" size={size} color={color} />,
             headerTitle: '⬡  CONFIGURAR MISSÃO',
           }}
         />
